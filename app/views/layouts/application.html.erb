@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Ruby on Rails Portfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+
+  </head>
+
+  <body>
+
+
+  <div class="wrapper">
+        <div class="container">
+              <header>
+                    <div class="row">
+                          <div class="navbar">
+                                <div class="navbar-header">
+                                      <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                                            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">VLADICHFOLIO</a>
+                                </div>
+
+                                <div class="collapse navbar-collapse">
+                                      <ul class="nav navbar-nav">
+                                            <li>
+                                                  <a href="#">About me</a>
+                                            </li>
+
+                                            <li>
+                                                  <a href="#">Contact</a>
+                                            </li>
+                                      </ul>
+
+                                      <ul class="nav navbar-nav social">
+
+                                            <li><a href="https://vk.com/vladichnaprimer"> <i class="fa fa-vk fa-lg"></i> </a></li>
+                                            <li><a href="https://www.facebook.com/vladich.kh"> <i class="fa fa-facebook fa-lg"></i> </a></li>
+                                            <li><a href="https://github.com/Vladichnaprimer"> <i class="fa fa-github fa-lg"></i> </a> </li>
+                                            <li><a href="https://www.linkedin.com/in/vlad-galagan-98745011a?trk=nav_responsive_tab_profile_pic"> <i class="fa fa-linkedin fa-lg"></i> </a></li>
+                                            <li><a href="https://www.instagram.com/vladichnaprimer/"> <i class="fa fa-instagram fa-lg"></i></a></li>
+                                            <li><a href="https://plus.google.com/u/0/103931042713194568560"> <i class="fa fa-google-plus fa-lg"></i> </a></li>
+                                      </ul>
+                                </div><!-- /.nav-collapse -->
+                          </div><!-- /.navbar -->
+                    </div>
+
+
+              </header>
+
+              <div class="row grid-list-wrapper no-gutter-space" id="shots">
+
+                   <%= yield%>
+              </div>
+        </div>
+  </div>
+
+  <footer>
+        <div class="container">
+              <nav class="nav-footer">
+                    <ul>
+                          <li>
+                                <a href="#">About me</a>
+                          </li>
+
+                          <li>
+                                <a href="#">Contact</a>
+                          </li>
+                    </ul>
+
+                    <ul>
+                          <li><a href="https://vk.com/vladichnaprimer"> <i class="fa fa-vk"></i> </a></li>
+                          <li><a href="https://www.facebook.com/vladich.kh"> <i class="fa fa-facebook"></i> </a></li>
+                          <li><a href="https://github.com/Vladichnaprimer"> <i class="fa fa-github"></i> </a> </li>
+                          <li><a href="https://www.linkedin.com/in/vlad-galagan-98745011a?trk=nav_responsive_tab_profile_pic"> <i class="fa fa-linkedin"></i> </a></li>
+                          <li><a href="https://www.instagram.com/vladichnaprimer/"> <i class="fa fa-instagram"></i></a></li>
+                          <li><a href="https://plus.google.com/u/0/103931042713194568560"> <i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+
+                    <p class="credits text-center">Vladich &copy; All Rights Reserved 2016</p>
+              </nav>
+        </div>
+
+  </footer>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>
