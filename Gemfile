@@ -15,12 +15,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise', '~> 4.2'
-gem 'rmagick'
-gem 'carrierwave'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'mail_form'
 
 group :production do
   gem 'pg'

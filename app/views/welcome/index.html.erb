@@ -22,7 +22,10 @@
                                 <p style="font-size: 0.8em"> <i class="fa fa-github fa-lg"> Github Link</i></p>
                                   <%end%>
                             </p>
-                            <p><%= project.id%></p>
+                            <!-- После создания юзера, обрамить эти кнопки с доступом только юзеру-->
+                            <%= link_to 'Edit', edit_project_path(project)  %>
+                            |
+                            <%= link_to 'Delete', project_path(project), method: :delete, data: { confirm: 'Are you sure?'} %>
                       </div>
 
                   <%end%>
