@@ -16,6 +16,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$dark: #424652;
+
 html {
   background:#d8d8d8;
 }
@@ -28,9 +30,16 @@ html {
 }
 
 body {
-  font-family:Lato,sans-serif
+  font-family: 'Raleway', sans-serif
 }
 
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: #424652;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
 .wrapper {
   background:#d8d8d8;
 }
@@ -63,12 +72,18 @@ a {
 }
 
 .app{
-  padding: 5px;
+  padding: 10px;
 }
 .app:hover{
-  background: #20a09c;
+  background: #33d6d1;
   color: #fff;
-  padding: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  i{
+    color: black;
+  }
+  i:hover{
+    opacity: 0.5;
+  }
 }
 
 img{
