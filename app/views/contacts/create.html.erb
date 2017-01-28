@@ -1,1 +1,8 @@
-<div class="row">      <div class="col-md-12 col-lg-12">            <h1 class="contactme"><span>Thank you for your message!</span> </h1><br>            <p>I'll get back to your soon</p>      </div></div>
+<div>
+  <% flash.each do |key, value| %>
+    <div>
+      <a href="#" data-dismiss="alert">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>

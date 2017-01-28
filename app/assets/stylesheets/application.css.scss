@@ -29,6 +29,35 @@ html {
   -webkit-transition:all .25s ease-in-out
 }
 
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
 body {
   font-family: 'Raleway', sans-serif
 }
@@ -615,4 +644,3 @@ textarea:hover {
   background: #20db7a;
   color: #fff;
 }
-

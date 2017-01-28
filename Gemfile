@@ -7,7 +7,7 @@ end
 
 ruby '2.2.2'
 
-gem 'rails', '~> 5.0.1'
+gem 'rails', '~>  5.0.1'
 gem 'sqlite3', group: :development
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mail_form'
+gem 'simple_form'
 
 group :production do
   gem 'pg'
