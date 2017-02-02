@@ -21,6 +21,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mail_form'
 gem 'simple_form'
+gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 
 group :production do
   gem 'pg'

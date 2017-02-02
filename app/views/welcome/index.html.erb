@@ -11,11 +11,11 @@
 
 <div class="row">
       <div class="col-md-9" style="padding-left: 50px;">
-            <h1 >My Little Projects</h1>
+            <h1 style="margin-left: 150px;">My Little Projects</h1>
             <div class="row">
                   <% @project.each do |project|%>
 
-                      <div class="col-md-4 app">
+                      <div class="col-md-9 app">
                             <h1><%= project.title%></h1>
                             <hr>
                             <p><%= project.description%> </p>
@@ -32,6 +32,9 @@
 
                   <%end%>
 
+            </div>
+            <div class="pagination" style="margin-left: 5em;">
+                  <%= will_paginate @project%>
             </div>
             <br/><br/><br/>
 

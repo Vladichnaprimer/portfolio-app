@@ -17,6 +17,10 @@
 @import "bootstrap";
 
 $dark: #424652;
+$white: #FFFFFF;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
 
 html {
   background:#d8d8d8;
@@ -93,6 +97,7 @@ a {
 
 .app{
   padding: 10px;
+  margin-left: 150px;
 }
 .app:hover{
   background: #33d6d1;
@@ -630,4 +635,52 @@ textarea:hover {
 #submit:hover {
   background: #20db7a;
   color: #fff;
+}
+
+// pagination
+
+.pagination:before,
+.pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear:box;
+}
+
+.pagination {
+	text-align: center;
+	//margin: 0 0 3em 0;
+  margin-left: 4em;
+  .welcome-pagination{
+    margin-left: 5em;
+  }
+	a, .previous_page, .current, .next_page {
+		padding: .75em 1em;
+		margin: 0 .5em;
+		border-radius: .15em;
+		line-height: 20px;
+		text-decoration: none;
+		background: $white;
+		font-weight: 700;
+		font-size: .7em;
+		font-style: normal;
+		color: $dark;
+		&:hover {
+			background: $highlight;
+			color: $white;
+		}
+	}
+	.current {
+		background: $highlight;
+		color: $white;
+	}
+	.disabled {
+		color: #C0C0C0;
+		&:hover {
+			color: #C0C0C0;
+			background: $white;
+		}
+	}
 }
